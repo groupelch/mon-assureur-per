@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Envoi à Web3Forms
       const fd = new FormData(form);
-      fd.append('access_key', '357dd0ff-2554-4760-b3e6-c28d07104bf9');
+      fd.append('access_key', '644e292b-ac73-49a1-845a-abc2a98126fc');
       fd.append('subject', 'Nouveau lead simulateur — Réduire son impôt');
       fd.append('from_name', 'Site Réduire son impôt');
       fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Envoi à Web3Forms
       const fd = new FormData(form);
-      fd.append('access_key', '357dd0ff-2554-4760-b3e6-c28d07104bf9');
+      fd.append('access_key', '644e292b-ac73-49a1-845a-abc2a98126fc');
       fd.append('subject', 'Nouveau lead — Réduire son impôt');
       fd.append('from_name', 'Site Réduire son impôt');
       fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
