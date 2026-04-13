@@ -203,12 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('.sim-lead-submit');
       if (btn) { btn.textContent = 'Envoi…'; btn.disabled = true; }
 
-      // Envoi à Web3Forms
-      const fd = new FormData(form);
-      fd.append('access_key', '644e292b-ac73-49a1-845a-abc2a98126fc');
-      fd.append('subject', 'Nouveau lead simulateur — Réduire son impôt');
-      fd.append('from_name', 'Site Réduire son impôt');
-      fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
+      // Envoi à Netlify Forms
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
       .finally(() => {
         const parent = form.closest('.sim-lead-capture');
         if (parent) parent.innerHTML = `
@@ -241,12 +241,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.textContent = 'Envoi en cours…'; btn.disabled = true; }
 
-      // Envoi à Web3Forms
-      const fd = new FormData(form);
-      fd.append('access_key', '644e292b-ac73-49a1-845a-abc2a98126fc');
-      fd.append('subject', 'Nouveau lead — Réduire son impôt');
-      fd.append('from_name', 'Site Réduire son impôt');
-      fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
+      // Envoi à Netlify Forms
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
       .finally(() => {
         form.style.display = 'none';
         const success = form.closest('.form-card')?.querySelector('.form-success') || form.nextElementSibling;
