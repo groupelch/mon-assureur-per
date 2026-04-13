@@ -401,20 +401,9 @@
         // Lead form submission
         document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            var form = this;
-            var btn = form.querySelector('button[type="submit"]');
-            if (btn) { btn.textContent = 'Envoi en cours…'; btn.disabled = true; }
-            fetch('https://formspree.io/f/xjgjvpjz', {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            }).finally(function() {
-                document.getElementById('lead-form-section').style.display = 'none';
-                var merci = document.createElement('div');
-                merci.style.cssText = 'text-align:center;padding:32px;background:white;border-radius:12px;box-shadow:0 2px 8px rgba(26,58,107,.1);margin-top:40px;';
-                merci.innerHTML = '<div style="font-size:2rem;margin-bottom:12px;">🎉</div><p style="font-weight:700;font-size:1.1rem;color:#111827;margin-bottom:8px;">Merci !</p><p style="color:#6B7280;">Un conseiller vous contacte dans les 24h avec votre étude personnalisée.</p>';
-                document.getElementById('lead-form-section').parentNode.appendChild(merci);
-            });
+            alert('Merci ! Un expert PER vous contactera sous 24h à ' + document.getElementById('lead-email').value);
+            this.reset();
+            document.getElementById('lead-form-section').style.display = 'none';
         });
     </script>
 

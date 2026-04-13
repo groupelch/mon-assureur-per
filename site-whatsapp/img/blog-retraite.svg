@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2347"/>
+      <stop offset="100%" style="stop-color:#1A3A6B"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+  <circle cx="520" cy="290" r="130" fill="rgba(245,158,11,0.06)"/>
+
+  <!-- Timeline line -->
+  <line x1="60" y1="200" x2="540" y2="200" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Age milestones -->
+  <!-- Age 30 -->
+  <circle cx="100" cy="200" r="10" fill="rgba(37,99,235,0.6)" stroke="rgba(37,99,235,0.9)" stroke-width="2"/>
+  <text x="100" y="225" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">30 ans</text>
+  <text x="100" y="165" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-family="Inter,sans-serif">Début</text>
+  <text x="100" y="180" text-anchor="middle" fill="#60A5FA" font-size="10" font-family="Inter,sans-serif">versements</text>
+  <line x1="100" y1="185" x2="100" y2="192" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- Age 45 -->
+  <circle cx="220" cy="200" r="10" fill="rgba(37,99,235,0.6)" stroke="rgba(37,99,235,0.9)" stroke-width="2"/>
+  <text x="220" y="225" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">45 ans</text>
+  <text x="220" y="160" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-family="Inter,sans-serif">Plafonds</text>
+  <text x="220" y="175" text-anchor="middle" fill="#FCD34D" font-size="10" font-family="Inter,sans-serif">reportés récupérés</text>
+  <line x1="220" y1="180" x2="220" y2="192" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- Age 55 -->
+  <circle cx="340" cy="200" r="10" fill="rgba(245,158,11,0.7)" stroke="#F59E0B" stroke-width="2"/>
+  <text x="340" y="225" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">55 ans</text>
+  <text x="340" y="155" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10" font-family="Inter,sans-serif">Achat résidence</text>
+  <text x="340" y="170" text-anchor="middle" fill="#FCD34D" font-size="10" font-family="Inter,sans-serif">Déblocage possible</text>
+  <line x1="340" y1="175" x2="340" y2="192" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- Age 65 — Retraite -->
+  <circle cx="500" cy="200" r="16" fill="rgba(52,211,153,0.8)" stroke="#34D399" stroke-width="2.5"/>
+  <text x="500" y="206" text-anchor="middle" fill="#fff" font-size="12" font-family="Inter,sans-serif" font-weight="700">🏠</text>
+  <text x="500" y="230" text-anchor="middle" fill="#34D399" font-size="11" font-family="Inter,sans-serif" font-weight="600">Retraite</text>
+  <text x="500" y="244" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">Capital ou rente</text>
+
+  <!-- Savings growing curve -->
+  <path d="M100 220 Q160 270 220 265 Q280 260 340 250 Q410 238 500 220"
+        stroke="url(#line)" stroke-width="2.5" fill="none" stroke-dasharray="6,3"/>
+
+  <!-- Large numbers -->
+  <text x="300" y="88" text-anchor="middle" fill="rgba(255,255,255,0.08)" font-size="80" font-family="Inter,sans-serif" font-weight="800">PER</text>
+
+  <!-- Badge -->
+  <rect x="60" y="260" width="480" height="44" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="300" y="278" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">Économie cumulée sur 35 ans à 30% de TMI, versement 5 000€/an :</text>
+  <text x="300" y="296" text-anchor="middle" fill="#FCD34D" font-size="15" font-family="Inter,sans-serif" font-weight="800">52 500 € d'impôts économisés</text>
+</svg>
