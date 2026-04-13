@@ -202,7 +202,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const btn = form.querySelector('.sim-lead-submit');
       if (btn) { btn.textContent = 'Envoi…'; btn.disabled = true; }
-      setTimeout(() => {
+
+      // Envoi à Netlify Forms
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).finally(() => {
         const parent = form.closest('.sim-lead-capture');
         if (parent) parent.innerHTML = `
           <div style="text-align:center;padding:12px 0;">
@@ -211,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p style="font-size:.82rem;color:#6B7280;">Un conseiller vous contacte dans les 24h avec votre étude personnalisée.</p>
           </div>`;
         if (window.dataLayer) window.dataLayer.push({ event: 'sim_lead_submit' });
-      }, 800);
+      });
     });
   });
 });
@@ -234,12 +240,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.textContent = 'Envoi en cours…'; btn.disabled = true; }
 
-      setTimeout(() => {
+      // Envoi à Netlify Forms
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).finally(() => {
         form.style.display = 'none';
         const success = form.closest('.form-card')?.querySelector('.form-success') || form.nextElementSibling;
         if (success) success.classList.add('visible');
         if (window.dataLayer) window.dataLayer.push({ event: 'lead_form_submit', form_id: form.id || 'unknown' });
-      }, 900);
+      });
     });
   });
 });
