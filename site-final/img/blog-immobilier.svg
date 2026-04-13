@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F2347"/>
+      <stop offset="100%" style="stop-color:#1E3A5F"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+  <circle cx="520" cy="60" r="110" fill="rgba(245,158,11,0.07)"/>
+
+  <!-- House shape -->
+  <polygon points="300,50 180,140 180,280 420,280 420,140" fill="rgba(37,99,235,0.2)" stroke="rgba(37,99,235,0.4)" stroke-width="1.5"/>
+  <!-- Roof -->
+  <polygon points="300,30 155,150 445,150" fill="rgba(245,158,11,0.25)" stroke="rgba(245,158,11,0.5)" stroke-width="2"/>
+
+  <!-- Door -->
+  <rect x="267" y="215" width="66" height="65" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <circle cx="322" cy="248" r="4" fill="rgba(245,158,11,0.8)"/>
+
+  <!-- Windows -->
+  <rect x="198" y="175" width="50" height="45" rx="4" fill="rgba(37,99,235,0.4)" stroke="rgba(37,99,235,0.5)" stroke-width="1"/>
+  <rect x="352" y="175" width="50" height="45" rx="4" fill="rgba(37,99,235,0.4)" stroke="rgba(37,99,235,0.5)" stroke-width="1"/>
+
+  <!-- Key icon -->
+  <circle cx="300" cy="80" r="18" fill="rgba(245,158,11,0.3)" stroke="#FCD34D" stroke-width="2"/>
+  <text x="300" y="87" text-anchor="middle" fill="#FCD34D" font-size="16" font-family="Inter,sans-serif">🔑</text>
+
+  <!-- Left info box -->
+  <rect x="30" y="100" width="130" height="80" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="95" y="125" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="Inter,sans-serif" font-weight="600">DÉBLOCAGE ANTICIPÉ</text>
+  <text x="95" y="148" text-anchor="middle" fill="#34D399" font-size="16" font-family="Inter,sans-serif" font-weight="800">Résidence</text>
+  <text x="95" y="166" text-anchor="middle" fill="#34D399" font-size="16" font-family="Inter,sans-serif" font-weight="800">principale</text>
+
+  <!-- Right info box -->
+  <rect x="440" y="100" width="130" height="80" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="505" y="125" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="Inter,sans-serif" font-weight="600">ÉCONOMIE CONSERVÉE</text>
+  <text x="505" y="150" text-anchor="middle" fill="#FCD34D" font-size="22" font-family="Inter,sans-serif" font-weight="800">100%</text>
+  <text x="505" y="170" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif">de la déduction</text>
+
+  <!-- Ground -->
+  <rect x="140" y="278" width="320" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+
+  <text x="300" y="320" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11" font-family="Inter,sans-serif">PER &amp; ACHAT IMMOBILIER — DÉBLOCAGE ANTICIPÉ</text>
+</svg>

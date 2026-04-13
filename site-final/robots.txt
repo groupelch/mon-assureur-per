@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://reduire-son-impot.mon-assureur.com/sitemap.xml
+
+# Répertoires techniques — pas utiles à indexer
+Disallow: /css/
+Disallow: /js/
