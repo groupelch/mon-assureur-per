@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3A6B"/>
+      <stop offset="100%" style="stop-color:#0F2347"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+  <circle cx="500" cy="80" r="120" fill="rgba(37,99,235,0.08)"/>
+
+  <!-- Calculator shape -->
+  <rect x="190" y="45" width="220" height="260" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <!-- Screen -->
+  <rect x="208" y="62" width="184" height="70" rx="10" fill="rgba(37,99,235,0.3)"/>
+  <text x="300" y="95" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="Inter,sans-serif" font-weight="500">ÉCONOMIE D'IMPÔT</text>
+  <text x="300" y="120" text-anchor="middle" fill="#FCD34D" font-size="26" font-family="Inter,sans-serif" font-weight="800">6 150 €</text>
+
+  <!-- Buttons -->
+  <rect x="210" y="146" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="235" y="168" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">7</text>
+  <rect x="275" y="146" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="300" y="168" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">8</text>
+  <rect x="340" y="146" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="365" y="168" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">9</text>
+
+  <rect x="210" y="188" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="235" y="210" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">4</text>
+  <rect x="275" y="188" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="300" y="210" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">5</text>
+  <rect x="340" y="188" width="50" height="32" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="365" y="210" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14" font-family="Inter,sans-serif">6</text>
+
+  <!-- Enter button -->
+  <rect x="210" y="230" width="180" height="42" rx="10" fill="rgba(245,158,11,0.85)"/>
+  <text x="300" y="256" text-anchor="middle" fill="#fff" font-size="13" font-family="Inter,sans-serif" font-weight="700">Calculer mon économie →</text>
+
+  <!-- Labels left -->
+  <text x="162" y="105" text-anchor="end" fill="rgba(255,255,255,0.45)" font-size="11" font-family="Inter,sans-serif">Revenu</text>
+  <text x="162" y="125" text-anchor="end" fill="rgba(255,255,255,0.45)" font-size="11" font-family="Inter,sans-serif">annuel</text>
+  <path d="M165 112 L195 112" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Labels right -->
+  <text x="438" y="105" fill="rgba(255,255,255,0.45)" font-size="11" font-family="Inter,sans-serif">TMI</text>
+  <text x="438" y="125" fill="rgba(255,255,255,0.45)" font-size="11" font-family="Inter,sans-serif">30-45%</text>
+  <path d="M435 112 L405 112" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Decorative sparks -->
+  <circle cx="140" cy="180" r="4" fill="rgba(245,158,11,0.6)"/>
+  <circle cx="130" cy="210" r="3" fill="rgba(37,99,235,0.6)"/>
+  <circle cx="460" cy="175" r="4" fill="rgba(52,211,153,0.6)"/>
+  <circle cx="470" cy="205" r="3" fill="rgba(245,158,11,0.5)"/>
+
+  <text x="300" y="325" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-size="11" font-family="Inter,sans-serif">SIMULATEUR PER — RÉSULTAT EN 30 SECONDES</text>
+</svg>
