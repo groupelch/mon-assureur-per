@@ -203,11 +203,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('.sim-lead-submit');
       if (btn) { btn.textContent = 'Envoi…'; btn.disabled = true; }
 
-      // Envoi à Netlify Forms
-      fetch('/', {
+      // Envoi à Formspree
+      fetch('https://formspree.io/f/xjgjvpjz', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString()
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
       })
       .finally(() => {
         const parent = form.closest('.sim-lead-capture');
@@ -241,11 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.textContent = 'Envoi en cours…'; btn.disabled = true; }
 
-      // Envoi à Netlify Forms
-      fetch('/', {
+      // Envoi à Formspree
+      fetch('https://formspree.io/f/xjgjvpjz', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString()
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
       })
       .finally(() => {
         form.style.display = 'none';
